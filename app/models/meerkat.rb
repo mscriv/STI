@@ -1,0 +1,3 @@
+class Meerkat < Animal
+
+end
