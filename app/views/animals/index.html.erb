@@ -16,8 +16,8 @@
         <td><%= animal.name %></td>
         <td><%= animal.race %></td>
         <td><%= animal.age %></td>
-        <td><%= link_to 'Show', "" %></td>
-        <td><%= link_to 'Edit', "" %></td>
+        <td><%= link_to 'Show', sti_animal_path(animal.race, animal) %></td>
+        <td><%= link_to 'Edit', sti_animal_path(animal.race, animal, :edit) %></td>
         <td><%= link_to 'Destroy', "", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
